@@ -18,7 +18,7 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-    if member.guild.name == 'chill':  #type your server name
+    if member.guild.name == 'red・velvet ♡':  #type your server name
         embed = discord.Embed(title=f'', description = f'welcome to {member.guild.name} {member.mention} \n ♥ [roles](https://discord.gg/mUcFFgQv2X)﹒[ping](https://discord.gg/xWADmpcGMQ)﹒[chat](https://discord.gg/PH7zb2QPUK)﹒♡ \n **﹒enjoy your stay + boost us :)**', color = discord.Color.from_rgb(47, 49, 54))
         embed.set_footer(text=".gg/rvelvet・enjoy!")
         await client.get_channel(1059592716238991438).send(f"{member.mention}")
