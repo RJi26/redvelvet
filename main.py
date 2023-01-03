@@ -9,7 +9,7 @@ client = commands.Bot(command_prefix = "e!", intents = intents)
 bot = commands.Bot(command_prefix = "e!", intents = intents)
 
 load_dotenv()
-token = os.getenv('TOKEN')
+
 
 @client.event
 async def on_ready():
@@ -28,4 +28,4 @@ async def on_member_join(member):
     else:
         return
 
-client.run(token)
+client.run(os.environ['TOKEN'])
