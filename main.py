@@ -12,7 +12,7 @@ load_dotenv()
 
 @client.event
 async def on_ready():
-    await client.change_presence(status = discord.Status.online, activity = discord.Activity(type = discord.ActivityType.watching, name = f'{len(client.servers)} servers!'))
+    await client.change_presence(status = discord.Status.online, activity = discord.Activity(type = discord.ActivityType.watching, name = f'{len(bot.guilds)} servers!'))
     print("Bot is up and running!")
 
 @client.event
